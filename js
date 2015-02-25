@@ -1,4 +1,4 @@
-//页面backToTop效果
+//页面backToTop效果 参考：http://docs.apicloud.com/%E4%BA%91API/stat-cloud-api
 $(window).on('keyup', function(e){
     if(e.keyCode === 84){
         window.scrollTo(0,0);
