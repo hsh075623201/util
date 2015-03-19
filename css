@@ -1,0 +1,51 @@
+//inline-block排版会存在默认6px的间隔，如需去除间隔，需将inline-block放在同一行。
+---------------------------------start--------------------------------------------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>绝对布局</title>
+        <meta content="text/html; charset=UTF-8" />
+        <meta charset="UTF-8" />
+        <style>
+            * {
+                margin: 0px;
+                padding: 0px
+            }
+            .defaultVal {
+                background: #CCCCCC;
+            }
+            .nor-sub {
+                background: #BBBBFF;
+            }
+            .sub {
+                margin: 0 0 0 30px;
+                padding: 0px;
+                display: inline-block;
+                width: 200px;
+                height: 80px;
+                background: pink;
+                color: #000000;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="defaultVal">
+            <div class="sub">
+                nor-sub1 sub
+                <br />
+                <br />
+                <br />
+                <br />
+            </div><div class="sub"><!--去除间隔 同一行，如果下一行存在间隔-->
+                nor-sub2 sub
+                <br />
+                sub
+                <br/>
+                margin-left:30px;
+                <br/>
+                display:inline-block;
+            </div>
+        </div>
+    </body>
+</html>
+-------------------------------end-----------------------------------------------------
